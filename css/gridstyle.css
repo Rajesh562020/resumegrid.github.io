@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:wght@200&family=Source+Sans+Pro&family=Ubuntu:ital,wght@0,400;0,500;1,300;1,700&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    box-sizing:border-box;
+    list-style: none;
+    font-family:  'Source Sans Pro', sans-serif;;
+}
+body{
+    background-color: aliceblue;
+}
+.main-content{
+    display: grid;
+    min-height: 1000px;
+    width : 90%;
+    margin:20px auto;
+    grid-template-columns: 300px 700px;
+    
+   
+  }
+  
+  .left-section {
+    grid-column: span 1;
+    background-color: silver;
+    padding:1 rem;
+    
+
+    
+    
+    
+  }
+  /* this is left side */
+  .profile-image{
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+    width: 60%;
+   
+    
+    
+  }
+  .name{
+    font-size: 1.2 rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.02px;
+    padding:0.8 rem;
+    text-transform: uppercase;
+  }
+  .designation{
+    font-size: 1 rem;
+    text-align:center;
+    text-transform: uppercase;
+    padding-bottom: 0.5 rem;
+    
+  }
+  .description{
+    font-size: 0.75 rem;
+    text-align: center;
+    padding: 1 rem;
+
+  }
+  .social-media{
+    display: flex;
+    justify-content: center;
+    
+  }
+  .personal-details{
+    display: block;
+    padding-left: 20px;
+    /* justify-content:flex-start; */
+  }
+
+  .skills-title{
+    font-size: 0.75 rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding:1 rem 0.5 rem;
+  }
+  .skill-name{
+    font-size: 0.65 rem;
+    font-weight: 0.65 rem;
+    text-align: left;
+    padding-bottom: 0.5 rem;
+  }
+ 
+  .progress-bar{
+    border:1px solid white;
+    height:4px;
+    
+  }
+  .skills-content{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+ 
+
+  
+
+
+
+     /* this is right side */
+  .right-section {
+    grid-column: span 1/span 2;
+    background-color: slategray;
+    
+    
+    
+    
+  }
+
+  .right-main-content{
+    padding: 32px 48px;
+  }
+
+  .right-title{
+     text-transform: uppercase;
+  }
+ 
+    
+  @media only screen and (max-width:674px){
+    .main-content{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    }
+}
